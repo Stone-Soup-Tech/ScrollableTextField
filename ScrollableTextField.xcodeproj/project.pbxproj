@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE7D306C24ACCA5E005A8E9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D306B24ACCA5E005A8E9A /* AppDelegate.swift */; };
+		BE7D306E24ACCA5E005A8E9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D306D24ACCA5E005A8E9A /* SceneDelegate.swift */; };
+		BE7D307024ACCA5E005A8E9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D306F24ACCA5E005A8E9A /* ViewController.swift */; };
+		BE7D307324ACCA5E005A8E9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7D307124ACCA5E005A8E9A /* Main.storyboard */; };
+		BE7D307824ACCA5F005A8E9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE7D307724ACCA5F005A8E9A /* Assets.xcassets */; };
+		BE7D307B24ACCA5F005A8E9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7D307924ACCA5F005A8E9A /* LaunchScreen.storyboard */; };
+		BE7D308624ACCA5F005A8E9A /* ScrollableTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D308524ACCA5F005A8E9A /* ScrollableTextFieldTests.swift */; };
+		BE7D309124ACCA5F005A8E9A /* ScrollableTextFieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D309024ACCA5F005A8E9A /* ScrollableTextFieldUITests.swift */; };
+		BE7D309F24ACCBC9005A8E9A /* ScrollableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D309E24ACCBC9005A8E9A /* ScrollableTextField.swift */; };
+		BE7D30A324ACCC16005A8E9A /* String+ExpectedHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D30A224ACCC16005A8E9A /* String+ExpectedHeight.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE7D308224ACCA5F005A8E9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE7D306024ACCA5E005A8E9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE7D306724ACCA5E005A8E9A;
+			remoteInfo = ScrollableTextField;
+		};
+		BE7D308D24ACCA5F005A8E9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE7D306024ACCA5E005A8E9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE7D306724ACCA5E005A8E9A;
+			remoteInfo = ScrollableTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE7D306824ACCA5E005A8E9A /* ScrollableTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollableTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE7D306B24ACCA5E005A8E9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE7D306D24ACCA5E005A8E9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BE7D306F24ACCA5E005A8E9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE7D307224ACCA5E005A8E9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE7D307724ACCA5F005A8E9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE7D307A24ACCA5F005A8E9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE7D307C24ACCA5F005A8E9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE7D308124ACCA5F005A8E9A /* ScrollableTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollableTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE7D308524ACCA5F005A8E9A /* ScrollableTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTextFieldTests.swift; sourceTree = "<group>"; };
+		BE7D308724ACCA5F005A8E9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE7D308C24ACCA5F005A8E9A /* ScrollableTextFieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollableTextFieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE7D309024ACCA5F005A8E9A /* ScrollableTextFieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTextFieldUITests.swift; sourceTree = "<group>"; };
+		BE7D309224ACCA5F005A8E9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE7D309E24ACCBC9005A8E9A /* ScrollableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTextField.swift; sourceTree = "<group>"; };
+		BE7D30A224ACCC16005A8E9A /* String+ExpectedHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ExpectedHeight.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE7D306524ACCA5E005A8E9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE7D307E24ACCA5F005A8E9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE7D308924ACCA5F005A8E9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE7D305F24ACCA5E005A8E9A = {
+			isa = PBXGroup;
+			children = (
+				BE7D306A24ACCA5E005A8E9A /* ScrollableTextField */,
+				BE7D308424ACCA5F005A8E9A /* ScrollableTextFieldTests */,
+				BE7D308F24ACCA5F005A8E9A /* ScrollableTextFieldUITests */,
+				BE7D306924ACCA5E005A8E9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE7D306924ACCA5E005A8E9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE7D306824ACCA5E005A8E9A /* ScrollableTextField.app */,
+				BE7D308124ACCA5F005A8E9A /* ScrollableTextFieldTests.xctest */,
+				BE7D308C24ACCA5F005A8E9A /* ScrollableTextFieldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE7D306A24ACCA5E005A8E9A /* ScrollableTextField */ = {
+			isa = PBXGroup;
+			children = (
+				BE7D306B24ACCA5E005A8E9A /* AppDelegate.swift */,
+				BE7D306D24ACCA5E005A8E9A /* SceneDelegate.swift */,
+				BE7D306F24ACCA5E005A8E9A /* ViewController.swift */,
+				BE7D307124ACCA5E005A8E9A /* Main.storyboard */,
+				BE7D307724ACCA5F005A8E9A /* Assets.xcassets */,
+				BE7D307924ACCA5F005A8E9A /* LaunchScreen.storyboard */,
+				BE7D307C24ACCA5F005A8E9A /* Info.plist */,
+				BE7D30A224ACCC16005A8E9A /* String+ExpectedHeight.swift */,
+				BE7D309E24ACCBC9005A8E9A /* ScrollableTextField.swift */,
+			);
+			path = ScrollableTextField;
+			sourceTree = "<group>";
+		};
+		BE7D308424ACCA5F005A8E9A /* ScrollableTextFieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE7D308524ACCA5F005A8E9A /* ScrollableTextFieldTests.swift */,
+				BE7D308724ACCA5F005A8E9A /* Info.plist */,
+			);
+			path = ScrollableTextFieldTests;
+			sourceTree = "<group>";
+		};
+		BE7D308F24ACCA5F005A8E9A /* ScrollableTextFieldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE7D309024ACCA5F005A8E9A /* ScrollableTextFieldUITests.swift */,
+				BE7D309224ACCA5F005A8E9A /* Info.plist */,
+			);
+			path = ScrollableTextFieldUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE7D306724ACCA5E005A8E9A /* ScrollableTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE7D309524ACCA5F005A8E9A /* Build configuration list for PBXNativeTarget "ScrollableTextField" */;
+			buildPhases = (
+				BE7D306424ACCA5E005A8E9A /* Sources */,
+				BE7D306524ACCA5E005A8E9A /* Frameworks */,
+				BE7D306624ACCA5E005A8E9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollableTextField;
+			productName = ScrollableTextField;
+			productReference = BE7D306824ACCA5E005A8E9A /* ScrollableTextField.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE7D308024ACCA5F005A8E9A /* ScrollableTextFieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE7D309824ACCA5F005A8E9A /* Build configuration list for PBXNativeTarget "ScrollableTextFieldTests" */;
+			buildPhases = (
+				BE7D307D24ACCA5F005A8E9A /* Sources */,
+				BE7D307E24ACCA5F005A8E9A /* Frameworks */,
+				BE7D307F24ACCA5F005A8E9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE7D308324ACCA5F005A8E9A /* PBXTargetDependency */,
+			);
+			name = ScrollableTextFieldTests;
+			productName = ScrollableTextFieldTests;
+			productReference = BE7D308124ACCA5F005A8E9A /* ScrollableTextFieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE7D308B24ACCA5F005A8E9A /* ScrollableTextFieldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE7D309B24ACCA5F005A8E9A /* Build configuration list for PBXNativeTarget "ScrollableTextFieldUITests" */;
+			buildPhases = (
+				BE7D308824ACCA5F005A8E9A /* Sources */,
+				BE7D308924ACCA5F005A8E9A /* Frameworks */,
+				BE7D308A24ACCA5F005A8E9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE7D308E24ACCA5F005A8E9A /* PBXTargetDependency */,
+			);
+			name = ScrollableTextFieldUITests;
+			productName = ScrollableTextFieldUITests;
+			productReference = BE7D308C24ACCA5F005A8E9A /* ScrollableTextFieldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE7D306024ACCA5E005A8E9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Yoyo;
+				TargetAttributes = {
+					BE7D306724ACCA5E005A8E9A = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					BE7D308024ACCA5F005A8E9A = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = BE7D306724ACCA5E005A8E9A;
+					};
+					BE7D308B24ACCA5F005A8E9A = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = BE7D306724ACCA5E005A8E9A;
+					};
+				};
+			};
+			buildConfigurationList = BE7D306324ACCA5E005A8E9A /* Build configuration list for PBXProject "ScrollableTextField" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE7D305F24ACCA5E005A8E9A;
+			productRefGroup = BE7D306924ACCA5E005A8E9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE7D306724ACCA5E005A8E9A /* ScrollableTextField */,
+				BE7D308024ACCA5F005A8E9A /* ScrollableTextFieldTests */,
+				BE7D308B24ACCA5F005A8E9A /* ScrollableTextFieldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE7D306624ACCA5E005A8E9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE7D307B24ACCA5F005A8E9A /* LaunchScreen.storyboard in Resources */,
+				BE7D307824ACCA5F005A8E9A /* Assets.xcassets in Resources */,
+				BE7D307324ACCA5E005A8E9A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE7D307F24ACCA5F005A8E9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE7D308A24ACCA5F005A8E9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE7D306424ACCA5E005A8E9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE7D307024ACCA5E005A8E9A /* ViewController.swift in Sources */,
+				BE7D306C24ACCA5E005A8E9A /* AppDelegate.swift in Sources */,
+				BE7D306E24ACCA5E005A8E9A /* SceneDelegate.swift in Sources */,
+				BE7D30A324ACCC16005A8E9A /* String+ExpectedHeight.swift in Sources */,
+				BE7D309F24ACCBC9005A8E9A /* ScrollableTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE7D307D24ACCA5F005A8E9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE7D308624ACCA5F005A8E9A /* ScrollableTextFieldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE7D308824ACCA5F005A8E9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE7D309124ACCA5F005A8E9A /* ScrollableTextFieldUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE7D308324ACCA5F005A8E9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE7D306724ACCA5E005A8E9A /* ScrollableTextField */;
+			targetProxy = BE7D308224ACCA5F005A8E9A /* PBXContainerItemProxy */;
+		};
+		BE7D308E24ACCA5F005A8E9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE7D306724ACCA5E005A8E9A /* ScrollableTextField */;
+			targetProxy = BE7D308D24ACCA5F005A8E9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE7D307124ACCA5E005A8E9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE7D307224ACCA5E005A8E9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE7D307924ACCA5F005A8E9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE7D307A24ACCA5F005A8E9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE7D309324ACCA5F005A8E9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE7D309424ACCA5F005A8E9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE7D309624ACCA5F005A8E9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5735V89Z5V;
+				INFOPLIST_FILE = ScrollableTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.socspy.ScrollableTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE7D309724ACCA5F005A8E9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5735V89Z5V;
+				INFOPLIST_FILE = ScrollableTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.socspy.ScrollableTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE7D309924ACCA5F005A8E9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5735V89Z5V;
+				INFOPLIST_FILE = ScrollableTextFieldTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.socspy.ScrollableTextFieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrollableTextField.app/ScrollableTextField";
+			};
+			name = Debug;
+		};
+		BE7D309A24ACCA5F005A8E9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5735V89Z5V;
+				INFOPLIST_FILE = ScrollableTextFieldTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.socspy.ScrollableTextFieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrollableTextField.app/ScrollableTextField";
+			};
+			name = Release;
+		};
+		BE7D309C24ACCA5F005A8E9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5735V89Z5V;
+				INFOPLIST_FILE = ScrollableTextFieldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.socspy.ScrollableTextFieldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScrollableTextField;
+			};
+			name = Debug;
+		};
+		BE7D309D24ACCA5F005A8E9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5735V89Z5V;
+				INFOPLIST_FILE = ScrollableTextFieldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.socspy.ScrollableTextFieldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScrollableTextField;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE7D306324ACCA5E005A8E9A /* Build configuration list for PBXProject "ScrollableTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE7D309324ACCA5F005A8E9A /* Debug */,
+				BE7D309424ACCA5F005A8E9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE7D309524ACCA5F005A8E9A /* Build configuration list for PBXNativeTarget "ScrollableTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE7D309624ACCA5F005A8E9A /* Debug */,
+				BE7D309724ACCA5F005A8E9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE7D309824ACCA5F005A8E9A /* Build configuration list for PBXNativeTarget "ScrollableTextFieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE7D309924ACCA5F005A8E9A /* Debug */,
+				BE7D309A24ACCA5F005A8E9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE7D309B24ACCA5F005A8E9A /* Build configuration list for PBXNativeTarget "ScrollableTextFieldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE7D309C24ACCA5F005A8E9A /* Debug */,
+				BE7D309D24ACCA5F005A8E9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE7D306024ACCA5E005A8E9A /* Project object */;
+}
