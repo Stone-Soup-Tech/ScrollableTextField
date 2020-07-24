@@ -5,11 +5,9 @@
 //  Created by Yoyo on 7/1/20.
 //  Copyright © 2020 Yoyo. All rights reserved.
 //
-
 import UIKit
 
 // ref: https://github.com/sunshuyao/ScrollableTextField
-
 enum TextRangeChangedType: Int {
     case leftAndBack = 0
     case leftAndForward
@@ -18,7 +16,7 @@ enum TextRangeChangedType: Int {
     case none
 }
 
-protocol InnerTextFieldDelegate {
+protocol InnerTextFieldDelegate: class {
     func textDidSet()
 }
 
@@ -81,7 +79,6 @@ public class ScrollableTextField: UIView {
         let contentViewWidthConstraint = contentView.widthAnchor.constraint(equalTo: self.widthAnchor)
         contentViewWidthConstraint.priority = .defaultHigh
         NSLayoutConstraint.activate([
-            contentView.heightAnchor.constraint(equalTo: self.heightAnchor),
             contentViewWidthConstraint,
             contentView.topAnchor.constraint(equalTo: self.topAnchor),
             contentView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
@@ -89,7 +86,6 @@ public class ScrollableTextField: UIView {
             
         // setup text field
         textField = InnerTextField(frame: .zero)
-//        textField.backgroundColor = .green
         textField.innerDelegate = self
         textField.addTarget(self, action: #selector(handleTextField(_:)), for: .editingChanged)
         textField.selectedTextRangeChangedBlock = {[weak self] (type, width) in
@@ -178,8 +174,11 @@ public class ScrollableTextField: UIView {
                 contentOffset.x = contentWidth - scrollView.bounds.width
                 scrollView.setContentOffset(contentOffset, animated: false)
             }
-            else if widthToCursor - scrollView.contentOffset.x > scrollView.bounds.width * 0.5 {
-                // cursor on the right --> let its position move to the center.
+                
+//            else if widthToCursor - scrollView.contentOffset.x > scrollView.bounds.width * 0.5 { // cursor on the right --> let its position move to the center.
+                //
+            else { // --> let its position move to the center.
+                
                 var contentOffset = scrollView.contentOffset
                 contentOffset.x = widthToCursor - scrollView.bounds.width * 0.5
                 scrollView.setContentOffset(contentOffset, animated: true)
@@ -188,7 +187,19 @@ public class ScrollableTextField: UIView {
     }
     
     func scroll(toOffset offset: CGPoint) {
-        scrollView?.setContentOffset(offset, animated: true)
+        var newOffset = offset
+        if newOffset.x < 0 {
+            newOffset.x = 0
+            scrollView.setContentOffset(newOffset, animated: true)
+            return
+        }
+        
+        let maxOffsetX = scrollView.contentSize.width - scrollView.bounds.width
+        if newOffset.x > maxOffsetX {
+            newOffset.x = maxOffsetX
+        }
+        
+        scrollView.setContentOffset(newOffset, animated: true)
     }
     
     public override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
@@ -241,10 +252,10 @@ extension ScrollableTextField: UIGestureRecognizerDelegate {
 }
 
 // MARK: - InnerTextField
-class InnerTextField: UITextField {
+class InnerTextField: GooTextFieldWithPasteAction {
     
     // MARK: - Public
-    var innerDelegate: InnerTextFieldDelegate?
+    weak var innerDelegate: InnerTextFieldDelegate?
     
     func getWidthFromDocumentBeginingToCursor() -> CGFloat? {
         guard let selectedRange = self.selectedTextRange else {
@@ -267,7 +278,6 @@ class InnerTextField: UITextField {
     }
 
     // MARK: - Private
-
     private func changeType(oldRange: UITextRange, newRange: UITextRange) -> TextRangeChangedType {
         let oldStart = self.offset(from: beginningOfDocument, to: oldRange.start)
         let oldEnd = self.offset(from: beginningOfDocument, to: oldRange.end)
