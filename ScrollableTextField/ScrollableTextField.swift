@@ -152,6 +152,7 @@ public class ScrollableTextField: UIView {
         }
     }
     
+    // to update the width of text textField
     @objc func handleTextField(_ textField: UITextField) {
         guard let scrollView = self.scrollView, let hookedTF = textField as? InnerTextField else { return }
 
@@ -213,6 +214,13 @@ public class ScrollableTextField: UIView {
         
         return super.hitTest(point, with: event)
     }
+    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        // udpate the width of textField
+        handleTextField(self.textField)
+    }
 }
 
 // MARK: - InnerTextFieldDelegate
@@ -222,7 +230,7 @@ extension ScrollableTextField: InnerTextFieldDelegate {
     }
 }
 
-// MARK: -UIScrollViewDelegate
+// MARK: - UIScrollViewDelegate
 extension ScrollableTextField: UIScrollViewDelegate {
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.x < 0 {
@@ -252,7 +260,7 @@ extension ScrollableTextField: UIGestureRecognizerDelegate {
 }
 
 // MARK: - InnerTextField
-class InnerTextField: GooTextFieldWithPasteAction {
+class InnerTextField: UITextField {
     
     // MARK: - Public
     weak var innerDelegate: InnerTextFieldDelegate?
@@ -339,6 +347,11 @@ class InnerTextField: GooTextFieldWithPasteAction {
         }
     }
 
+    func setAttributedTextAndUpdateUI(_ text: NSAttributedString) {
+        self.attributedText = text
+        self.innerDelegate?.textDidSet()
+    }
+    
     override var selectedTextRange: UITextRange? {
         willSet {
             if let old = selectedTextRange, let `new` = newValue {
